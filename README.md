@@ -16,3 +16,22 @@ source venv/bin/activate
 Install all packages from requirement.txt
 pip install -r requirements.txt
 ```
+**Step 4**
+```
+Create .env file and edit according to your configuration
+
+STAGE=stage_name
+
+DB_HOST=cluster0.****.mongodb.net (as like this)
+DB_USER=mongodb user name
+DB_PASSWORD=mongodb password
+
+DB_NAME_PREFIX=buildingdecision(database name except stage name(Example dev, test, prod))
+
+USER_POOL_ID_STAGE = user_pool_id for stage
+S3_BUCKET_NAME_STAGE = s3 bucket name for stage
+```
+**Step 5**
+```
+Excecute main.py file
+```
