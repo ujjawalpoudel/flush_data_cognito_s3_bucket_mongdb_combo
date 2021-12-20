@@ -54,6 +54,7 @@ db_uri = f"mongodb+srv://{user}:{password}@{host}/{database_name}?retryWrites=tr
 myclient = pymongo.MongoClient(db_uri)
 mydb = myclient[database_name]
 
+# Lists all collections of particular database
 for coll in mydb.list_collection_names():
     mycol = mydb[coll]
     mycol.drop()
