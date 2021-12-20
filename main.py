@@ -33,7 +33,7 @@ if stage == "prod":
     USER_POOL_ID = os.getenv("USER_POOL_ID_PROD")
     S3_BUCKET_NAME = os.getenv("S3_BUCKET_NAME_PROD")
     database_name = f"{db_name_prefix}_{stage}"
-    
+
 # Lists the users in the Amazon Cognito user pool.
 response = client.list_users(
     UserPoolId=USER_POOL_ID,
